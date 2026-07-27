@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Primera Semana de Labores — Encuesta RRHH</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+<main class="page">
+
+  <div id="formView">
+    <div class="week-strip">
+      <span class="active"></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <header class="hero">
+      <span class="eyebrow">Recursos Humanos</span>
+      <h1>Primera Semana de Labores</h1>
+      <p>Este formulario tiene como objetivo conocer tu experiencia durante tu primera semana de trabajo y mejorar nuestro proceso de inducción. Tus respuestas serán utilizadas para fortalecer la experiencia de los nuevos colaboradores.</p>
+    </header>
+
+    <form id="surveyForm">
+
+      <section class="section">
+        <span class="section-label">Sección 1</span>
+        <h2>Información General</h2>
+
+        <div class="field">
+          <label class="q" for="nombre">Nombre del colaborador</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="field">
+          <label class="q" for="sucursal">Sucursal</label>
+          <input type="text" id="sucursal" name="sucursal" required>
+        </div>
+
+        <div class="field">
+          <label class="q" for="puesto">Puesto</label>
+          <input type="text" id="puesto" name="puesto" required>
+        </div>
+
+        <div class="field">
+          <label class="q" for="fechaIngreso">Fecha de ingreso</label>
+          <input type="date" id="fechaIngreso" name="fechaIngreso" required>
+        </div>
+      </section>
+
+      <section class="section">
+        <span class="section-label">Sección 2</span>
+        <h2>Recepción e Inducción</h2>
+
+        <div class="field">
+          <label class="q" for="quienRecibio">1. ¿Quién fue la persona que te recibió el primer día?</label>
+          <input type="text" id="quienRecibio" name="quienRecibio" required>
+        </div>
+
+        <div class="field">
+          <label class="q">2. ¿Te hizo sentir bienvenido(a) durante tu primer día?</label>
+          <div class="options">
+            <label><input type="radio" name="bienvenido" value="Sí" required><span>Sí</span></label>
+            <label><input type="radio" name="bienvenido" value="Parcialmente"><span>Parcialmente</span></label>
+            <label><input type="radio" name="bienvenido" value="No"><span>No</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="q">3. ¿Cómo calificarías la recepción que recibiste?</label>
+          <div class="scale">
+            <label><input type="radio" name="calificacionRecepcion" value="1" required><span>1</span></label>
+            <label><input type="radio" name="calificacionRecepcion" value="2"><span>2</span></label>
+            <label><input type="radio" name="calificacionRecepcion" value="3"><span>3</span></label>
+            <label><input type="radio" name="calificacionRecepcion" value="4"><span>4</span></label>
+            <label><input type="radio" name="calificacionRecepcion" value="5"><span>5</span></label>
+          </div>
+          <div class="scale-caption"><span>Muy mala</span><span>Excelente</span></div>
+        </div>
+
+        <div class="field">
+          <label class="q">4. ¿Cómo describirías tu curva de aprendizaje durante tu primera semana?</label>
+          <div class="options">
+            <label><input type="radio" name="curvaAprendizaje" value="Muy fácil" required><span>Muy fácil</span></label>
+            <label><input type="radio" name="curvaAprendizaje" value="Fácil"><span>Fácil</span></label>
+            <label><input type="radio" name="curvaAprendizaje" value="Adecuada"><span>Adecuada</span></label>
+            <label><input type="radio" name="curvaAprendizaje" value="Difícil"><span>Difícil</span></label>
+            <label><input type="radio" name="curvaAprendizaje" value="Muy difícil"><span>Muy difícil</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="q" for="actividadesAyuda">5. ¿Qué actividades o personas te ayudaron más a aprender tu trabajo?</label>
+          <textarea id="actividadesAyuda" name="actividadesAyuda"></textarea>
+        </div>
+
+        <div class="field">
+          <label class="q" for="temasExplicarMejor">6. ¿Qué temas consideras que necesitan explicarse mejor?</label>
+          <textarea id="temasExplicarMejor" name="temasExplicarMejor"></textarea>
+        </div>
+
+        <div class="field">
+          <label class="q">7. ¿Tu supervisor se presentó contigo durante tu primera semana?</label>
+          <div class="options">
+            <label><input type="radio" name="supervisorPresento" value="Sí" required><span>Sí</span></label>
+            <label><input type="radio" name="supervisorPresento" value="No"><span>No</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="q">8. ¿Recibiste retroalimentación por parte de tu supervisor?</label>
+          <div class="options">
+            <label><input type="radio" name="retroalimentacion" value="Sí, diariamente" required><span>Sí, diariamente</span></label>
+            <label><input type="radio" name="retroalimentacion" value="Sí, al menos una vez"><span>Sí, al menos una vez</span></label>
+            <label><input type="radio" name="retroalimentacion" value="No"><span>No</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="q">9. ¿Cómo calificas el apoyo recibido por tu supervisor?</label>
+          <div class="scale">
+            <label><input type="radio" name="apoyoSupervisor" value="1" required><span>1</span></label>
+            <label><input type="radio" name="apoyoSupervisor" value="2"><span>2</span></label>
+            <label><input type="radio" name="apoyoSupervisor" value="3"><span>3</span></label>
+            <label><input type="radio" name="apoyoSupervisor" value="4"><span>4</span></label>
+            <label><input type="radio" name="apoyoSupervisor" value="5"><span>5</span></label>
+          </div>
+          <div class="scale-caption"><span>Muy poco</span><span>Excelente</span></div>
+        </div>
+
+        <div class="field">
+          <label class="q">10. ¿Las funciones que Recursos Humanos te explicó coinciden con las actividades que realizas en la sucursal?</label>
+          <div class="options">
+            <label><input type="radio" name="funcionesCoinciden" value="Totalmente" required><span>Totalmente</span></label>
+            <label><input type="radio" name="funcionesCoinciden" value="En su mayoría"><span>En su mayoría</span></label>
+            <label><input type="radio" name="funcionesCoinciden" value="Parcialmente"><span>Parcialmente</span></label>
+            <label><input type="radio" name="funcionesCoinciden" value="No coinciden"><span>No coinciden</span></label>
+          </div>
+          <div class="conditional" id="diferenciasWrap">
+            <label class="q" for="diferencias">Si hubo diferencias, ¿cuáles fueron?</label>
+            <textarea id="diferencias" name="diferencias"></textarea>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="q" for="recursosFaltantes">11. ¿Qué recursos o información hicieron falta durante tu primera semana?</label>
+          <textarea id="recursosFaltantes" name="recursosFaltantes"></textarea>
+        </div>
+
+        <div class="field">
+          <label class="q">12. En una escala del 1 al 10, ¿cómo calificarías tu primera semana de trabajo?</label>
+          <div class="scale">
+            <label><input type="radio" name="calificacionGeneral" value="1" required><span>1</span></label>
+            <label><input type="radio" name="calificacionGeneral" value="2"><span>2</span></label>
+            <label><input type="radio" name="calificacionGeneral" value="3"><span>3</span></label>
+            <label><input type="radio" name="calificacionGeneral" value="4"><span>4</span></label>
+            <label><input type="radio" name="calificacionGeneral" value="5"><span>5</span></label>
+            <label><input type="radio" name="calificacionGeneral" value="6"><span>6</span></label>
+            <label><input type="radio" name="calificacionGeneral" value="7"><span>7</span></label>
+            <label><input type="radio" name="calificacionGeneral" value="8"><span>8</span></label>
+            <label><input type="radio" name="calificacionGeneral" value="9"><span>9</span></label>
+            <label><input type="radio" name="calificacionGeneral" value="10"><span>10</span></label>
+          </div>
+          <div class="scale-caption"><span>Muy mala</span><span>Excelente</span></div>
+        </div>
+
+        <div class="field">
+          <label class="q" for="mejoras">13. ¿Qué podríamos mejorar para los próximos colaboradores?</label>
+          <textarea id="mejoras" name="mejoras"></textarea>
+        </div>
+      </section>
+
+      <button type="submit" class="submit" id="submitBtn">Enviar respuestas</button>
+      <p class="status-msg" id="statusMsg"></p>
+    </form>
+  </div>
+
+  <div id="confirmView" class="confirm" style="display:none;">
+    <h1>¡Gracias por tu tiempo!</h1>
+    <p>Tus respuestas fueron enviadas correctamente y nos ayudarán a mejorar la experiencia de los próximos colaboradores.</p>
+  </div>
+
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/primera-semana-labores.js"></script>
+</body>
+</html>
