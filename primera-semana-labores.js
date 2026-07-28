@@ -5,6 +5,17 @@ const submitBtn = document.getElementById('submitBtn');
 const formView = document.getElementById('formView');
 const confirmView = document.getElementById('confirmView');
 
+// Convertir automáticamente a mayúsculas los campos de texto libre
+const uppercaseFields = form.querySelectorAll('input[type="text"], textarea');
+uppercaseFields.forEach(field => {
+  field.addEventListener('input', () => {
+    const start = field.selectionStart;
+    const end = field.selectionEnd;
+    field.value = field.value.toUpperCase();
+    field.setSelectionRange(start, end);
+  });
+});
+
 // Campo condicional: mostrar "diferencias" solo si no coincide totalmente
 const funcionesRadios = document.querySelectorAll('input[name="funcionesCoinciden"]');
 const diferenciasWrap = document.getElementById('diferenciasWrap');
